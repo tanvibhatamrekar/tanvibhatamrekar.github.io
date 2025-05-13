@@ -1,0 +1,80 @@
+/ myarangetram-website/myarangetram-website/css/responsive.css
+
+/* Responsive styles for the My Arangetram website */
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+    
+    header {
+        padding: 10px;
+    }
+
+    nav {
+        display: block;
+        text-align: center;
+    }
+
+    .gallery {
+        flex-direction: column;
+    }
+
+    .contact-form {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+/* Tablet styles */
+@media (min-width: 769px) and (max-width: 1024px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        padding: 20px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-form {
+        width: 70%;
+        margin: 0 auto;
+    }
+}
+
+/* Desktop styles */
+@media (min-width: 1025px) {
+    body {
+        font-size: 18px;
+    }
+
+    header {
+        padding: 30px;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .gallery {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .contact-form {
+        width: 50%;
+        margin: 0 auto;
+    }
+}
