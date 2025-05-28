@@ -8,60 +8,80 @@
     <link rel="stylesheet" href="css/responsive.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Montserrat:wght@300;400;500;600&family=Dancing+Script:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* Overall page background is maintained by style.css */
+        .invitation-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 40px auto;
+            max-width: 90%;
+        }
+        .invitation-image {
+            max-width: 100%;
+            height: auto;
+            max-height: 70vh; /* Adjust so the image stays in frame */
+            display: block;
+            margin: 0 auto;
+            object-fit: contain;
+        }
+        .btn-container {
+            margin-top: 20px;
+            display: flex;
+            gap: 20px;
+        }
+        .btn {
+            display: inline-block;
+            padding: 12px 24px;
+            background-color: #d4af37;
+            color: #000;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #c4a030;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header (remains intact) -->
     <header>
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="invitation.html">Invitation</a></li>
-                <li><a href="rsvp.html">RSVP</a></li>
-                <li><a href="program-brochure.html">Program Brochure</a></li>
+                <li><a href="https://evite.me/r2bn76w4x4">RSVP</a></li>
+                <li><a href="program-brochure.html">Program</a></li>
                 <li><a href="gallery.html">Gallery</a></li>
                 <li><a href="watch-live.html">Watch Live</a></li>
-                <li><a href="guestbook.html">Guestbook</a></li>
             </ul>
         </nav>
     </header>
 
+    <!-- Main invitation container -->
     <main>
-        <section id="invitation" class="invitation">
-            <h2 class="section-title">Invitation</h2>
-            
-            <div class="invitation-content">
-                <p class="guru-name">Guru Padmaja Kelam &</p>
-                <p class="academy-name">Kalaivani Dance Academy along with Makarand & Pooja</p>
-                <p>cordially invite you and your family to the</p>
-                
-                <h3 class="event-title">
-                    Bharatanatyam Arangetram of<br>
-                    Tanvi Bhatamrekar
-                </h3>
-                
-                <p class="disciple-info">Disciple of Smt. Padmaja Kelam</p>
-                
-                <div class="event-details">
-                    <p><strong>Date:</strong> Saturday, June 14th, 2025</p>
-                    <p><strong>Time:</strong> 3:30 PM to 6:30 PM EST</p>
-                    <p><strong>Seating:</strong> 02:30 PM</p>
-                    <p><strong>Venue:</strong> West Forsyth High School, 4155 Drew Rd, Cumming, GA 30040</p>
-                    <p><strong>Dress Code:</strong> Indian/Western Semi Formal</p>
-                </div>
-                
+        <div class="invitation-container">
+            <img src="assets/images/invitation.png" alt="Invitation Image" class="invitation-image">
+            <div class="btn-container">
                 <a href="https://www.google.com/maps/dir/?api=1&destination=West+Forsyth+High+School+4155+Drew+Rd+Cumming+GA+30040" 
-                   class="btn btn-directions" 
-                   target="_blank" 
-                   rel="noopener noreferrer">
-                    <i class="fas fa-map-marker-alt"></i> Directions
+                   class="btn" target="_blank" rel="noopener noreferrer">
+                    Directions
+                </a>
+                <a href="https://evite.me/r2bn76w4x4" 
+                   class="btn" target="_blank" rel="noopener noreferrer">
+                    RSVP
                 </a>
             </div>
-        </section>
+        </div>
     </main>
 
+    <!-- Footer (remains intact) -->
     <footer>
         <p>&copy; 2025 Tanvi's Arangetram. All rights reserved.</p>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
